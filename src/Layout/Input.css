@@ -1,0 +1,32 @@
+.text{
+    font-size: small;
+    top:0px;
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: initial;
+    color:white;
+    padding:3px;
+    background-color:blueviolet
+}
+.input{
+    border:none;
+    width:90%;
+    outline: none;
+    background:transparent;
+    color:wheat
+}
+.input::placeholder{
+    color:white
+}
+.cool{
+    margin-top:10px;
+    border:white 1px solid;
+    width:calc(300px);
+    height:auto;
+    padding:9px;
+    padding-left: 0;
+    padding-Right: 0;
+    display:flex;
+    justify-content: center;
+    border:'c'
+}

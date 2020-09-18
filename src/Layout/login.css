@@ -1,0 +1,37 @@
+.Contain{
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    height:auto;
+    padding:2px;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.par{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top:13px;
+}
+.tex{
+    color:white;
+    font-size: xx-large;
+    font-weight: 800;
+    margin-bottom:65px;
+}
+.button{
+    margin-top:80px;
+    border:none;
+    color:black;
+    padding:10px;
+    padding-left:30px;
+    padding-right: 30px;
+    outline:none;
+    font-size: medium;
+    font-weight: 800;
+    color:purple;
+}
