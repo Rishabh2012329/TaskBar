@@ -8,8 +8,8 @@ function NewT({setlogged}){
     return(
         <Consumer>
             {value=>{
-                const {list}=value
-                
+                //const {list}=value
+                const list={lists:[1,2]}
                 return(
                     <div >
                         <Header setlogged={setlogged}/>
