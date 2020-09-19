@@ -11,6 +11,7 @@ export default function SignIN({Slog}) {
 
         function sub(e){
             e.preventDefault();
+            if(UserName.length<7){
             email!==""&&password!==""&&UserName!==""?
             firebase.auth().createUserWithEmailAndPassword(email,password).then(()=>{
                 var user=firebase.auth().currentUser;
@@ -20,6 +21,10 @@ export default function SignIN({Slog}) {
                 Slog(true)
                 alert('userlogged in')
             }).catch(err=>alert(err)):alert('email,password or userName is empty')
+        }
+        else{
+            alert('userName should be of less than 6 characters')
+        }
         }
         return (
         <div>

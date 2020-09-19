@@ -25,8 +25,8 @@
     width:calc(300px);
     height:auto;
     padding:9px;
-    padding-left: 0;
-    padding-Right: 0;
+    padding-left: 3px;
+    padding-Right: 3px;
     display:flex;
     justify-content: center;
     border:'c'

@@ -22,7 +22,7 @@ export default function Login({Slog}) {
             auth.sendPasswordResetEmail(email).then(function() {
             alert("A email has been sent at your email address")
             }).catch(function(error) {
-            // An error happened.
+            alert(error)
             });
         }
         else{
@@ -49,7 +49,7 @@ export default function Login({Slog}) {
                 </div>
                 <div style={{width:'320px',maxWidth:'320px'}}>
                     <span style={{marginRight:'3px',color:'white'}}>Show password</span><input type="checkbox"/>
-                    <button style={{backgroundColor:'transparent',border:'none',float:'right',color:'white'}} onClick={()=>reset}>Forgetpassword?</button>
+                    <button style={{backgroundColor:'transparent',border:'none',float:'right',color:'white'}} onClick={()=>reset()}>Forgetpassword?</button>
                 </div>
                 <button onClick={sub} className="button">Login</button>
             </div>
