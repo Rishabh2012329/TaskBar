@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/TaskBar/static/css/main.77d36974.chunk.css",
-    "main.js": "/TaskBar/static/js/main.f4b4e17b.chunk.js",
-    "main.js.map": "/TaskBar/static/js/main.f4b4e17b.chunk.js.map",
+    "main.css": "/TaskBar/static/css/main.cf0c2b52.chunk.css",
+    "main.js": "/TaskBar/static/js/main.2af8f75b.chunk.js",
+    "main.js.map": "/TaskBar/static/js/main.2af8f75b.chunk.js.map",
     "runtime-main.js": "/TaskBar/static/js/runtime-main.c3492f33.js",
     "runtime-main.js.map": "/TaskBar/static/js/runtime-main.c3492f33.js.map",
     "static/js/2.80b3db9d.chunk.js": "/TaskBar/static/js/2.80b3db9d.chunk.js",
     "static/js/2.80b3db9d.chunk.js.map": "/TaskBar/static/js/2.80b3db9d.chunk.js.map",
     "index.html": "/TaskBar/index.html",
-    "precache-manifest.114d5f14c63653bcbb2ca11048807879.js": "/TaskBar/precache-manifest.114d5f14c63653bcbb2ca11048807879.js",
+    "precache-manifest.13961840d4a1af8c3651f8c2678efff7.js": "/TaskBar/precache-manifest.13961840d4a1af8c3651f8c2678efff7.js",
     "service-worker.js": "/TaskBar/service-worker.js",
-    "static/css/main.77d36974.chunk.css.map": "/TaskBar/static/css/main.77d36974.chunk.css.map",
+    "static/css/main.cf0c2b52.chunk.css.map": "/TaskBar/static/css/main.cf0c2b52.chunk.css.map",
     "static/js/2.80b3db9d.chunk.js.LICENSE.txt": "/TaskBar/static/js/2.80b3db9d.chunk.js.LICENSE.txt",
     "static/media/White_Zombie.svg": "/TaskBar/static/media/White_Zombie.e1282860.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c3492f33.js",
     "static/js/2.80b3db9d.chunk.js",
-    "static/css/main.77d36974.chunk.css",
-    "static/js/main.f4b4e17b.chunk.js"
+    "static/css/main.cf0c2b52.chunk.css",
+    "static/js/main.2af8f75b.chunk.js"
   ]
 }
