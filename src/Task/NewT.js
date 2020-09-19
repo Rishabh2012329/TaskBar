@@ -8,14 +8,14 @@ function NewT({setlogged}){
     return(
         <Consumer>
             {value=>{
-                //const {list}=value
-                const list={lists:[1,2]}
+                const {list,add,update}=value
+                //const list={lists:[1,2]}
                 return(
                     <div >
                         <Header setlogged={setlogged}/>
                         <div style={{display:'flex',flexWrap:'wrap'}}>
-                            {list.lists?list.lists.map((obj)=>(
-                                <Task tasks={obj}/>
+                            {list?list.map((obj)=>(
+                                <Task tasks={obj} addN={add} update={update}/>
                             )):null}
                         </div>
 
