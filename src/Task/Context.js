@@ -6,22 +6,26 @@ const Context =React.createContext();
 export class Contexts extends Component {
     state={
         list:[[],],
-        add:(name,discription)=>this.addN(name,discription),
-        update:(obj,name)=>this.update(obj,name),
+        add:(name,discription,id)=>this.addN(name,discription,id),
+        update:(obj,name,discription,id)=>this.update(obj,name,discription,id),
+        newL:()=>this.newlist()
     }
-    addN=(name,discription)=>{
+    addN=(name,discription,id)=>{
         let list=this.state.list;
-        list[0].push({name,discription})
+        list[id].push({name,discription,id})
         this.setState({list:list},()=>console.log(this.state.list))
     }
-
-    update=(obj,name)=>{
+    newlist=()=>{
         let {list}=this.state;
-        console.log(name)
-        let nlist=list[0].map(tsk=>(
-           tsk.name===obj?{name:name}:tsk
+        list.push([]);
+        this.setState({list:list})
+    }
+    update=(obj,name,discription,id)=>{
+        let {list}=this.state;
+        let nlist=list[id].map(tsk=>(
+           tsk.name===obj?{name:name,discription:discription}:tsk
         ))
-        list[0]=nlist
+        list[id]=nlist
         console.log(nlist)
         this.setState({list:list})
     }

@@ -35,3 +35,9 @@
     font-weight: 800;
     color:purple;
 }
+
+#logout:hover{
+    
+    cursor: pointer;
+    color:purple;
+}
