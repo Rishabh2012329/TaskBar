@@ -47,7 +47,7 @@ export default function Login({Slog}) {
                         setpass(e.target.value)
                     }} placeholder="password" type='password' />
                 </div>
-                <div style={{width:'38%',alignItems:'center'}}>
+                <div style={{width:'320px',maxWidth:'320px'}}>
                     <span style={{marginRight:'3px',color:'white'}}>Show password</span><input type="checkbox"/>
                     <button style={{backgroundColor:'transparent',border:'none',float:'right',color:'white'}} onClick={()=>reset}>Forgetpassword?</button>
                 </div>

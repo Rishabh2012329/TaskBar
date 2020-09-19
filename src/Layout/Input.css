@@ -10,7 +10,8 @@
 }
 .input{
     border:none;
-    width:90%;
+    width:320px;
+    max-width: 320px;
     outline: none;
     background:transparent;
     color:wheat
