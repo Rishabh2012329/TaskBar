@@ -36,15 +36,16 @@ function App() {
     <Contexts>
       <div>{!logged?<div>
         <style>{`body{background:blueviolet;}`}</style>
+        {log?<Login Slog={setlogged}/>:null}
+        {sign?<Sign Slog={setlogged}/>:null}
         {log===false&&sign===false?
         <div className="Contain">
         <button onClick={()=> setlog(true)} className="button">Login</button>
         <button onClick={()=>setsign(true)} className="button">SignUp</button>
-      </div>:<button className="button" style={{top:0,position:'absolute'}} onClick={()=>{setlog(false);setsign(false)}}>Back</button>
+      </div>:<div style={{width:'100%',display:'flex',justifyContent:'center'}}><button className="button" style={{}} onClick={()=>{setlog(false);setsign(false)}}>Back</button></div>
         }
         
-        {log?<Login Slog={setlogged}/>:null}
-        {sign?<Sign Slog={setlogged}/>:null}</div>:<NewT setlogged={setlogged}/>
+        </div>:<NewT setlogged={setlogged}/>
 
       }
       </div>

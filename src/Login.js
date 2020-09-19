@@ -15,7 +15,22 @@ export default function Login({Slog}) {
             Slog(true)
         }).catch(err=>alert(err)):alert('email or password is empty')
     }
+    function reset(){
+        var auth = firebase.auth();
+        
+        if(email){
+            auth.sendPasswordResetEmail(email).then(function() {
+            alert("A email has been sent at your email address")
+            }).catch(function(error) {
+            // An error happened.
+            });
+        }
+        else{
+            alert('plz enter email  and then click on ForgetPassword')
+        }
 
+
+    }
     return (
         <div>
             <style>{`body{background:blueviolet;}`}</style>
@@ -31,6 +46,10 @@ export default function Login({Slog}) {
                     <Input text="Password" onChange={e=>{
                         setpass(e.target.value)
                     }} placeholder="password" type='password' />
+                </div>
+                <div style={{width:'38%',alignItems:'center'}}>
+                    <span style={{marginRight:'3px',color:'white'}}>Show password</span><input type="checkbox"/>
+                    <button style={{backgroundColor:'transparent',border:'none',float:'right',color:'white'}} onClick={()=>reset}>Forgetpassword?</button>
                 </div>
                 <button onClick={sub} className="button">Login</button>
             </div>
